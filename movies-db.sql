@@ -76,3 +76,6 @@ SELECT
 FROM actors A
 INNER JOIN movies B on A.favorite_movie_id = B.id
 WHERE B.awards > 3;
+
+# 12 - Crie um índice sobre o nome na tabela de filmes.
+CREATE INDEX `movies.idx_title` ON movies(title);
